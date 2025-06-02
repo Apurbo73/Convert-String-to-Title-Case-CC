@@ -61,4 +61,3 @@ Moves to the next line after printing each modified sentence.
 
 ---
 
-Would you like this converted into [Python](f), or need a [version with comments in code](f) for easier learning?
