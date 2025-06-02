@@ -1,1 +1,1 @@
-﻿## Convert-String-to-Title-Case-CC
+﻿## Convert String-to-Title-Case-CC
