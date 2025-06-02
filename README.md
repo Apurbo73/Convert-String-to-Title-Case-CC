@@ -1,63 +1,6 @@
 ﻿## Convert String to Title Case CC
 
 
-
-
----
-
-### ✅ **Full Code Again (For Reference):**
-
-```cpp
-#include <iostream>
-#include <sstream>
-#include <cctype>
-using namespace std;
-
-int main() {
-    int T;
-    cin >> T;
-    cin.ignore();  // To handle the newline after reading T
-
-    while (T--) {
-        string line;
-        getline(cin, line);  // Read the full sentence
-        istringstream iss(line);  // Used to split line into words
-        string word;
-        bool first = true;  // To avoid printing space before first word
-
-        while (iss >> word) {  // Read one word at a time
-            // Check if the word is an acronym (all uppercase)
-            bool is_acronym = true;
-            for (char c : word) {
-                if (!isupper(c)) {
-                    is_acronym = false;
-                    break;
-                }
-            }
-
-            if (!first) cout << ' ';  // Print space between words
-            first = false;  // After first word, always print space
-
-            if (is_acronym) {
-                cout << word;  // Leave acronym unchanged
-            } else {
-                // Convert word to title case
-                word[0] = toupper(word[0]);  // Capitalize first letter
-                for (int i = 1; i < word.length(); ++i) {
-                    word[i] = tolower(word[i]);  // Lowercase the rest
-                }
-                cout << word;
-            }
-        }
-        cout << '\n';  // After each test case
-    }
-
-    return 0;
-}
-```
-
----
-
 ### 🔍 **Detailed Breakdown**
 
 #### 1. `int T; cin >> T;`
