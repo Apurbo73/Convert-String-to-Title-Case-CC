@@ -1,7 +1,7 @@
 ﻿## Convert String to Title Case-CC
 
 
-Sure! Let's walk through the code step by step. This C++ program reads multiple test cases and converts each sentence to **title case**, while keeping acronyms (all-uppercase words) unchanged — and it does all of this **without using separate functions**.
+
 
 ---
 
