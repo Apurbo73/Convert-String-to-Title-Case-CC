@@ -61,3 +61,7 @@ Moves to the next line after printing each modified sentence.
 
 ---
 
+
+This C++ program changes each sentence into title case. That means it makes the first letter of every word capital and the rest of the letters small. But if a word is already all capital letters (like an acronym such as "NASA" or "CODECHEF"), it leaves it as it is. The program reads each line, breaks it into words, and checks if the word is all uppercase. If it is, it prints the word directly; if not, it changes the first letter to uppercase and the rest to lowercase.
+
+The program also makes sure that words are printed with a space between them but not before the first word. Everything is done inside the main() function, using simple loops and tools like toupper() to make letters big and tolower() to make them small. It handles multiple test cases, one sentence at a time.
